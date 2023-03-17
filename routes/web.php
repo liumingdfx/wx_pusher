@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\WechatController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::any('/wechat', [WechatController::class,'serve']);
+Route::get('/', function () {
+    return view('welcome');
+});
